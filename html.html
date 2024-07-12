@@ -1,78 +1,45 @@
-<!DOCTYPE html> 
-<html>  
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Online html editor</title>
-    <style>
-    body{
-      background-image:url(https://c.wallhere.com/photos/de/f4/hoonigan_Chevrolet_Camaro_car_Burnout_donut-1379595.jpg!d);
-      background-size:cover;
-      background-position:center;
-    }
-        nav ul li {
-            float:right;
-        }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Login Form in HTML and CSS | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        nav ul li a {
-            color: white;
-            text-align:center;
-            padding:px 0px;
-            
-        }
-        nav ul {
-            display: block;
-            list-style-type:none;
-            padding:1px;
-            background-color:black;
-            overflow:hidden;
-        }
-
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 30px 36px;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color:blue;
-            font-size:20px;
-            transition-duration:2s;
-        }
-        delay-image{
-          opacity:0;
-          transition:opacity 2s;
-        }
-        
-    </style>
 </head>
-
 <body>
-    <nav>
-        <ul>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+             <div class="input-box"> 
+                <input type="text" 
+                 placeholder="UserName"
+                required>
+                <i class='bx bxs-user'></i>
+             </div>
+             <div class="input-box"> 
+                <input type="password"
+                 placeholder="Password"
+                required>
+                <i class='bx bxs-lock-alt'></i>
+             </div> 
 
-            <li> <a href="#">Home </a> </li>
-            <li><a href="about. html">About us </a></li>
-            <li><a href="login.html">Login </a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-    </nav>
-    <h1>My website </h1>
-    <p>The charger is an American vehicle</p>
-    <img
-     entr
-     transition-delay:0.5s;
-    <img src=https://s1.cdn.autoevolution.com/images/news/1969-dodge-charger-dark-side-packs-a-demon-surprise-144964-7.jpg alt="dodge 1969 charger" width="400" height="170" alt="delayed image"class="delayed-image">
-     <h2>Dodge charger</h2>
-     <Table> 
-     <th>Vehicle's</th>
-       <tr> 
-       <th>Name</th>
-       <th>Year</th>
-       
-       </tr>
-     </Table>
-     
-    </body>
+             <div class="remember-forgot">
+                <label><input type="checkbox"> Remind me  
+                </label>
+                <a href="#">Forgot password?</a>
+             </div>
 
+             <button type="submit" class="btn">Login</button>
+
+             <div class="register-link">
+                <p>Don't have an account? <a 
+                    href="#">Register</a></p>
+             </div>
+        </form>
+    </div>
+
+</body>
 </html>
